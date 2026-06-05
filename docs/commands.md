@@ -65,3 +65,23 @@ Examples:
 
 - `+ const token = "..."` in a diff can be high risk.
 - `src/tokenStore.js` in a file list is a weaker path-level signal and should be reviewed with the actual diff.
+
+- ### Limitations and future improvements
+
+The current `risk-check` command uses rule-based signal detection. It is useful for quick maintainer review, but it does not replace manual code review or a dedicated security audit.
+
+Current limitations:
+
+- it does not fully understand code context;
+- it may produce false positives in documentation or examples;
+- it does not yet classify severity levels;
+- it does not yet explain every detected signal in detail;
+- it works best as an early warning layer, not as a final security decision.
+
+Planned improvements:
+
+- context-aware risk scoring;
+- severity classification for detected signals;
+- clearer explanations for each risk signal;
+- better handling of diffs, file paths, and pull request metadata;
+- optional AI-assisted analysis for maintainers.
