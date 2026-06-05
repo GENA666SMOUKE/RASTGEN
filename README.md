@@ -12,6 +12,12 @@ Open-source maintainers often carry a large amount of invisible work: reviewing 
 
 RASTGEN is intentionally dependency-light. The first public version uses deterministic rules and simple text analysis so that it can run in any repository without external services. The roadmap includes optional AI-assisted workflows for maintainers who want LLM-powered pull request summaries, issue triage, documentation checks, and security-sensitive diff analysis.
 
+## Project status
+
+RASTGEN is an early-stage open-source project. The current version provides rule-based maintainer automation for repository audits, issue triage, pull request summaries, changelog drafts, and risk checks.
+
+The roadmap focuses on JSON and Markdown reports, GitHub API integration, automatic pull request comments, and optional AI-assisted maintainer workflows.
+
 ## Core features
 
 - Repository health audit
