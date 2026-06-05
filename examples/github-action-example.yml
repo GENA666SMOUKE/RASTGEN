@@ -1,0 +1,15 @@
+name: RASTGEN Audit
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  rastgen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: GENA666SMOUKE/RASTGEN@v0.1.1
+        with:
+          mode: audit

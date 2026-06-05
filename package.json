@@ -1,0 +1,36 @@
+{
+  "name": "rastgen",
+  "version": "0.1.1",
+  "description": "Open-source maintainer automation toolkit for GitHub repositories.",
+  "main": "src/index.js",
+  "bin": {
+    "rastgen": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test tests/*.test.js",
+    "audit:repo": "node src/index.js audit",
+    "demo:triage": "node src/index.js issue-triage examples/sample-issue.txt",
+    "demo:pr": "node src/index.js pr-summary examples/sample-pr-files.txt",
+    "demo:changelog": "node src/index.js changelog examples/sample-changelog-input.txt",
+    "demo:risk": "node src/index.js risk-check examples/sample-pr-files.txt"
+  },
+  "keywords": [
+    "open-source",
+    "maintainer",
+    "github-action",
+    "issue-triage",
+    "pull-request",
+    "changelog",
+    "release-notes",
+    "automation",
+    "repository-health",
+    "security-checks"
+  ],
+  "author": "GENA666SMOUKE <rasthouse666@gmail.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  }
+}

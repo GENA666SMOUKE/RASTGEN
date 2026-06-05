@@ -1,0 +1,21 @@
+name: "RASTGEN"
+description: "Open-source maintainer automation toolkit for repository audits, issue triage, PR summaries, changelog drafts, and risk checks."
+
+author: "GENA666SMOUKE"
+
+inputs:
+  mode:
+    description: "RASTGEN mode: audit, issue-triage, pr-summary, changelog, risk-check"
+    required: true
+    default: "audit"
+  input-file:
+    description: "Optional input file for issue triage, PR summary, changelog, or risk check"
+    required: false
+
+runs:
+  using: "node20"
+  main: "src/index.js"
+
+branding:
+  icon: "tool"
+  color: "gray-dark"

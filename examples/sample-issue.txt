@@ -1,0 +1,2 @@
+The GitHub Action fails when the repository does not contain a SECURITY.md file.
+It crashes with an exception instead of printing a warning.

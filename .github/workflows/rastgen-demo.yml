@@ -1,0 +1,23 @@
+name: RASTGEN Demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm install
+
+      - run: node src/index.js audit
+      - run: node src/index.js issue-triage examples/sample-issue.txt
+      - run: node src/index.js pr-summary examples/sample-pr-files.txt
+      - run: node src/index.js changelog examples/sample-changelog-input.txt
+      - run: node src/index.js risk-check examples/sample-risk-input.txt
