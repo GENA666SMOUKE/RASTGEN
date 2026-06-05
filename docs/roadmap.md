@@ -46,3 +46,4 @@
 - Documentation freshness checks
 - Dependency risk summaries
 - Maintainer dashboard
+- Add Markdown report output for CI summaries.
